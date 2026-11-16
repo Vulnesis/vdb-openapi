@@ -4,6 +4,8 @@
 
 # vdb-openapi
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/vdb-openapi)
+
 A Go module that reads Swagger 2.0, OpenAPI 3.0 and OpenAPI 3.1 documents into one data contract. It is for every Vulnetix service that handles API descriptions: the CLI, vdb-api, vdb-site, cloudscan and the processors. A consumer gets the same `oas.Document` whatever version the file was written in, and never imports a parser library or branches on spec version.
 
 ## Install
