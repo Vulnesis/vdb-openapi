@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Vulnetix/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/oas"
 )
 
 // Filled is a concrete request path for an operation's template.

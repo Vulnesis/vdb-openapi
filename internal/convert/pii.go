@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Vulnetix/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/oas"
 )
 
 // piiRules match field names, not values. A hint is a reason to look, not a

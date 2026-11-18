@@ -9,9 +9,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Vulnetix/vdb-openapi/internal/tree"
-	"github.com/Vulnetix/vdb-openapi/oas"
-	"github.com/Vulnetix/vdb-openapi/route"
+	"github.com/Vulnesis/vdb-openapi/internal/tree"
+	"github.com/Vulnesis/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/route"
 )
 
 // ErrNotSpec is returned for a document that is neither Swagger nor

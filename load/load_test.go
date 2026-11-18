@@ -7,8 +7,8 @@ import (
 	"testing"
 	"testing/fstest"
 
-	"github.com/Vulnetix/vdb-openapi/load"
-	"github.com/Vulnetix/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/load"
+	"github.com/Vulnesis/vdb-openapi/oas"
 )
 
 func mustLoad(t *testing.T, src string, opt load.Options) *oas.Document {

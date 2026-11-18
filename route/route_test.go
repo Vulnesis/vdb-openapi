@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Vulnetix/vdb-openapi/route"
+	"github.com/Vulnesis/vdb-openapi/route"
 )
 
 func TestKeyCases(t *testing.T) {

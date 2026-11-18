@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Vulnetix/vdb-openapi/detect"
+	"github.com/Vulnesis/vdb-openapi/detect"
 )
 
 func TestLikelySpecName(t *testing.T) {

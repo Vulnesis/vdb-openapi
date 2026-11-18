@@ -1,4 +1,4 @@
-// Package route holds the one normalisation every Vulnetix component uses
+// Package route holds the one normalisation every Vulnesis component uses
 // to name an HTTP route, so a route the CLI reads from code, an operation
 // from an OpenAPI document, a runtime sensor's "METHOD path" and a Guardian
 // log line all meet on the same key.

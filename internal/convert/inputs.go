@@ -4,8 +4,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Vulnetix/vdb-openapi/internal/tree"
-	"github.com/Vulnetix/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/internal/tree"
+	"github.com/Vulnesis/vdb-openapi/oas"
 )
 
 var inOrder = map[oas.ParameterIn]int{oas.InPath: 0, oas.InQuery: 1, oas.InHeader: 2, oas.InCookie: 3}

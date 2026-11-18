@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Vulnetix/vdb-openapi/load"
-	"github.com/Vulnetix/vdb-openapi/oas"
-	"github.com/Vulnetix/vdb-openapi/robustness"
+	"github.com/Vulnesis/vdb-openapi/load"
+	"github.com/Vulnesis/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/robustness"
 )
 
 func doc(t *testing.T, src string) *oas.Document {

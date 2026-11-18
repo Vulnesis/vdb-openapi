@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Vulnetix/vdb-openapi/diff"
-	"github.com/Vulnetix/vdb-openapi/load"
-	"github.com/Vulnetix/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/diff"
+	"github.com/Vulnesis/vdb-openapi/load"
+	"github.com/Vulnesis/vdb-openapi/oas"
 )
 
 func petstore(t *testing.T, edit func(string) string) *oas.Document {

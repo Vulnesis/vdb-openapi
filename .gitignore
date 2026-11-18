@@ -20,10 +20,13 @@ go.work.sum
 .DS_Store
 
 # Vulnetix scan output and credentials
+# Vulnesis scan output and credentials
 .vulnetix/
+.vulnesis/
 memory.yaml
 sast.sarif
 sbom.cdx.json
 settings.json
 !.vulnetix/workflow.yaml
+!.vulnesis/workflow.yaml
 !.vulnetix/workflow.yaml

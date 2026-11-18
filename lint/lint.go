@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"sort"
 
-	"github.com/Vulnetix/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/oas"
 )
 
 // Finding is one problem on one operation (Key) or the document (Key "").

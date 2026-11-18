@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   auto-version:
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-local]
     steps:
       - name: Checkout code
         uses: actions/checkout@v7.0.1
@@ -37,7 +37,7 @@ jobs:
       - name: Set up Git user
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "support@vulnetix.com"
+          git config user.email "support@vulnes.is"
 
       - name: Determine version bump
         id: bump

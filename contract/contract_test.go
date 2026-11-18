@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/Vulnetix/vdb-openapi/contract"
+	"github.com/Vulnesis/vdb-openapi/contract"
 )
 
 // The committed schema must match the Go types. Run `go run ./cmd/genschema`

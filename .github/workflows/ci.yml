@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-local]
     steps:
       - uses: actions/checkout@v7.0.1
 

@@ -3,8 +3,8 @@ package convert
 import (
 	"sort"
 
-	"github.com/Vulnetix/vdb-openapi/internal/tree"
-	"github.com/Vulnetix/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/internal/tree"
+	"github.com/Vulnesis/vdb-openapi/oas"
 )
 
 const (

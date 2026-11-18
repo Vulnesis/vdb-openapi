@@ -12,7 +12,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Vulnetix/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/oas"
 )
 
 // Kind names one change.

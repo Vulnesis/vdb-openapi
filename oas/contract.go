@@ -1,4 +1,4 @@
-// Package oas is the data contract every Vulnetix service reads an API
+// Package oas is the data contract every Vulnesis service reads an API
 // description through. A Swagger 2.0, OpenAPI 3.0 or OpenAPI 3.1 file all
 // become the same Document, so a consumer never branches on spec version.
 //

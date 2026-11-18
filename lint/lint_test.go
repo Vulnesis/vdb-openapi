@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Vulnetix/vdb-openapi/lint"
-	"github.com/Vulnetix/vdb-openapi/load"
+	"github.com/Vulnesis/vdb-openapi/lint"
+	"github.com/Vulnesis/vdb-openapi/load"
 )
 
 func TestPetstoreIsClean(t *testing.T) {

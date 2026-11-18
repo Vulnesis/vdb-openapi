@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/Vulnetix/vdb-openapi/contract"
+	"github.com/Vulnesis/vdb-openapi/contract"
 )
 
 func main() {

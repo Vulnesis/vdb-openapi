@@ -656,9 +656,9 @@
       "type": "object"
     }
   },
-  "$id": "https://github.com/Vulnetix/vdb-openapi/contract/contract.schema.json",
+  "$id": "https://github.com/Vulnesis/vdb-openapi/contract/contract.schema.json",
   "$ref": "#/$defs/Document",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "Every Swagger 2.0, OpenAPI 3.0 and OpenAPI 3.1 document reads as this shape. Generated from package oas; do not edit by hand.",
-  "title": "Vulnetix API description contract 1.0.0"
+  "title": "Vulnesis API description contract 1.0.0"
 }

@@ -1,4 +1,4 @@
-module github.com/Vulnetix/vdb-openapi
+module github.com/Vulnesis/vdb-openapi
 
 go 1.25.0
 

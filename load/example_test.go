@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Vulnetix/vdb-openapi/load"
-	"github.com/Vulnetix/vdb-openapi/route"
+	"github.com/Vulnesis/vdb-openapi/load"
+	"github.com/Vulnesis/vdb-openapi/route"
 )
 
 func Example() {

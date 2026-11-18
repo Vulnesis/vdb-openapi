@@ -1,6 +1,6 @@
 # Notes for coding agents
 
-This module is the only place a Vulnetix service reads an OpenAPI or Swagger document. Keep it that way.
+This module is the only place a Vulnesis service reads an OpenAPI or Swagger document. Keep it that way.
 
 - **One contract for every version.** A version difference is settled in `internal/convert` and nowhere else. `TestCoherence` must stay byte-identical across `testdata/coherence/petstore.*`; when you add a field, add it to all three inputs.
 - **Unknown is not none.** `SecurityUnspecified` (nothing declared) is never `SecurityNone` (declared as no authentication), and an unset limit is `nil`, never `0`.

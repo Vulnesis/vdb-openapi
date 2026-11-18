@@ -12,7 +12,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Vulnetix/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/oas"
 )
 
 //go:embed contract.schema.json
@@ -27,8 +27,8 @@ func Generate() []byte {
 	root := g.ref(reflect.TypeOf(oas.Document{}))
 	out := map[string]any{
 		"$schema":     "https://json-schema.org/draft/2020-12/schema",
-		"$id":         "https://github.com/Vulnetix/vdb-openapi/contract/contract.schema.json",
-		"title":       "Vulnetix API description contract " + oas.ContractVersion,
+		"$id":         "https://github.com/Vulnesis/vdb-openapi/contract/contract.schema.json",
+		"title":       "Vulnesis API description contract " + oas.ContractVersion,
 		"description": "Every Swagger 2.0, OpenAPI 3.0 and OpenAPI 3.1 document reads as this shape. Generated from package oas; do not edit by hand.",
 		"$ref":        root["$ref"],
 		"$defs":       g.defs,

@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Vulnetix/vdb-openapi/internal/tree"
-	"github.com/Vulnetix/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/internal/tree"
+	"github.com/Vulnesis/vdb-openapi/oas"
 )
 
 var oauth2Flows = map[string]string{

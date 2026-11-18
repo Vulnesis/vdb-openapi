@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/Vulnetix/vdb-openapi/load"
-	"github.com/Vulnetix/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/load"
+	"github.com/Vulnesis/vdb-openapi/oas"
 )
 
 var update = flag.Bool("update", false, "rewrite golden files")

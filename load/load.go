@@ -12,9 +12,9 @@ import (
 	"encoding/hex"
 	"io/fs"
 
-	"github.com/Vulnetix/vdb-openapi/internal/convert"
-	"github.com/Vulnetix/vdb-openapi/internal/tree"
-	"github.com/Vulnetix/vdb-openapi/oas"
+	"github.com/Vulnesis/vdb-openapi/internal/convert"
+	"github.com/Vulnesis/vdb-openapi/internal/tree"
+	"github.com/Vulnesis/vdb-openapi/oas"
 )
 
 // Resolver fetches an absolute URL for an external $ref. The caller owns
