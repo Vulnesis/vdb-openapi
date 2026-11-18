@@ -4,7 +4,7 @@
 
 # vdb-openapi
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/vdb-openapi)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnesis/vdb-openapi)
 
 A Go module that reads Swagger 2.0, OpenAPI 3.0 and OpenAPI 3.1 documents into one data contract. It is for every Vulnesis service that handles API descriptions: the CLI, vdb-api, vdb-site, cloudscan and the processors. A consumer gets the same `oas.Document` whatever version the file was written in, and never imports a parser library or branches on spec version.
 
@@ -47,7 +47,7 @@ t, ok := m.Match("GET", "/v1/pets/42") // t.Key == "GET /pets/{param}"
 |---|---|
 | `oas` | The contract types and `ContractVersion`. |
 | `load` | Detects, parses and converts a document. Follows `$ref`s through an `fs.FS` or a `Resolver` you pass; never opens a network connection itself. |
-| `route` | The one route key (`GET /users/{param}`) shared with code routes from `vulnesis analyze`, plus a matcher whose serialised form other languages can rebuild. |
+| `route` | The one route key (`GET /users/{param}`) shared with code routes from `vulnetix analyze`, plus a matcher whose serialised form other languages can rebuild. |
 | `diff` | Changes between two versions, each flagged breaking and/or a security regression. |
 | `detect` | Spec file names, framework generators and the well-known probe paths (`detect/probepaths.json`). |
 | `lint` | Structural checks that break correlation or testing. |
