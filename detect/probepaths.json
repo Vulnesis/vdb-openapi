@@ -1,5 +1,5 @@
 {
-    "about": "Well-known paths where frameworks and gateways serve an API description. The one list for the CLI (vulnesis api discover), vdb-site remote probes and the website. Probes send GET with no credentials, and only to hosts whose probe mode allows guessing paths.",
+    "about": "Well-known paths where frameworks and gateways serve an API description. The one list for the CLI (vulnetix api discover), vdb-site remote probes and the website. Probes send GET with no credentials, and only to hosts whose probe mode allows guessing paths.",
     "version": "1",
     "paths": [
         { "path": "/openapi.json", "serves": "openapi", "frameworks": ["fastapi", "nestjs", "generic"] },
