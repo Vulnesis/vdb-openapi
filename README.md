@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="pix.svg" alt="Pix, the Vulnesis mascot" width="110">
+  <img src="strix.svg" alt="Strix, the Vulnesis mascot" width="110">
 </p>
 
 # vdb-openapi

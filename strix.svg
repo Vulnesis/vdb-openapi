@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="96 26 320 320" width="512" height="512" role="img" aria-label="Strix, the Vulnesis AI assistant owl">
+  <!-- Strix app-icon portrait: the avatar head and face, cropped to a bust. Palette: keleustes/crates/kls-ui/src/theme.rs (gold, ink, cyan, amber) -->
+  <defs>
+    <radialGradient id="body" cx="42%" cy="26%" r="82%">
+      <stop offset="0%"  stop-color="rgb(255,236,176)"/>
+      <stop offset="34%" stop-color="rgb(255,196,0)"/>
+      <stop offset="76%" stop-color="rgb(232,166,0)"/>
+      <stop offset="100%" stop-color="rgb(168,104,0)"/>
+    </radialGradient>
+    <radialGradient id="disc" cx="50%" cy="40%" r="66%">
+      <stop offset="0%" stop-color="rgb(31,43,58)"/>
+      <stop offset="62%" stop-color="rgb(11,17,26)"/>
+      <stop offset="100%" stop-color="rgb(5,8,13)"/>
+    </radialGradient>
+    <radialGradient id="belly" cx="50%" cy="30%" r="76%">
+      <stop offset="0%" stop-color="rgb(255,248,222)"/>
+      <stop offset="58%" stop-color="rgb(255,224,138)"/>
+      <stop offset="100%" stop-color="rgb(240,186,60)"/>
+    </radialGradient>
+    <radialGradient id="eyeW" cx="42%" cy="38%" r="68%">
+      <stop offset="0%" stop-color="rgb(255,253,244)"/>
+      <stop offset="72%" stop-color="rgb(255,243,204)"/>
+      <stop offset="100%" stop-color="rgb(240,214,140)"/>
+    </radialGradient>
+    <radialGradient id="iris" cx="42%" cy="36%" r="72%">
+      <stop offset="0%" stop-color="rgb(255,224,138)"/>
+      <stop offset="52%" stop-color="rgb(255,176,0)"/>
+      <stop offset="100%" stop-color="rgb(255,138,0)"/>
+    </radialGradient>
+    <radialGradient id="pupil" cx="42%" cy="36%" r="70%">
+      <stop offset="0%" stop-color="rgb(31,43,58)"/>
+      <stop offset="60%" stop-color="rgb(11,17,26)"/>
+      <stop offset="100%" stop-color="rgb(5,8,13)"/>
+    </radialGradient>
+    <linearGradient id="beakG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgb(58,74,96)"/>
+      <stop offset="45%" stop-color="rgb(16,24,36)"/>
+      <stop offset="100%" stop-color="rgb(5,8,13)"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="rgb(58,74,96)"/>
+      <stop offset="35%" stop-color="rgb(16,24,36)"/>
+      <stop offset="100%" stop-color="rgb(5,8,13)"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="rgb(255,236,176)"/>
+      <stop offset="50%" stop-color="rgb(255,196,0)"/>
+      <stop offset="100%" stop-color="rgb(138,83,0)"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgb(17,217,242)" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="rgb(11,17,26)" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="rgb(5,8,13)" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="refl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgb(255,255,255)" stop-opacity="0.24"/>
+      <stop offset="55%" stop-color="rgb(255,255,255)" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <style>
+    #lidL { transform: translateY(0); animation: blink 5.6s ease-in-out infinite; }
+    @keyframes blink { 0%,90%,100%{ transform: translateY(0) } 93%,94.5%{ transform: translateY(128px) } }
+    #reticle { transform-origin: 312px 186px; animation: spin 16s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg) } }
+    #vscan { animation: vscan 3s ease-in-out infinite; }
+    @keyframes vscan { 0%{ transform: translateY(-42px); opacity:.3 } 50%{ opacity:1 } 100%{ transform: translateY(42px); opacity:.3 } }
+    #brackets { transform-origin: 312px 186px; animation: lock 1.9s ease-in-out infinite; }
+    @keyframes lock { 0%,100%{ opacity:.45; transform: scale(1.06) } 50%{ opacity:1; transform: scale(0.96) } }
+    #led { animation: led 1.4s ease-in-out infinite; }
+    @keyframes led { 0%,100%{ opacity:.5 } 50%{ opacity:1 } }
+    #seam { animation: seam 2.8s ease-in-out infinite; }
+    @keyframes seam { 0%,100%{ opacity:.5 } 50%{ opacity:1 } }
+    @media (prefers-reduced-motion: reduce){ #lidL,#reticle,#vscan,#brackets,#led,#seam{ animation:none } }
+  </style>
+
+  <clipPath id="clipEyeL"><circle cx="200" cy="188" r="52"/></clipPath>
+  <clipPath id="lens"><ellipse cx="312" cy="186" rx="59" ry="55"/></clipPath>
+  <clipPath id="clipBody"><path d="M256 70 C 236 64 216 64 198 76 L 132 34 L 142 104 C 120 128 108 190 110 252 C 116 366 154 458 256 470 C 358 458 396 366 402 252 C 404 190 392 128 370 104 L 380 34 L 314 76 C 296 64 276 64 256 70 Z"/></clipPath>
+
+  <!-- body and head, with the ear tufts swept out as crest plates -->
+  <path d="M256 70
+           C 236 64 216 64 198 76 L 132 34 L 142 104
+           C 120 128 108 190 110 252
+           C 116 366 154 458 256 470
+           C 358 458 396 366 402 252
+           C 404 190 392 128 370 104 L 380 34 L 314 76
+           C 296 64 276 64 256 70 Z"
+        fill="url(#body)" stroke="rgb(5,8,13)" stroke-width="8" stroke-linejoin="round"/>
+  <g clip-path="url(#clipBody)">
+    <ellipse cx="226" cy="112" rx="104" ry="40" fill="rgb(255,248,222)" opacity="0.42" filter="url(#soft)"/>
+    <!-- faceted plates: darker gold cheeks, ink wings, ink crest panels -->
+    <path d="M142 104 L104 214 L150 138 Z" fill="rgb(184,122,0)" opacity="0.55"/>
+    <path d="M370 104 L408 214 L362 138 Z" fill="rgb(138,83,0)" opacity="0.6"/>
+    <path d="M100 262 C 108 300 124 350 150 400 L 180 336 C 162 304 150 272 146 240 Z" fill="rgb(11,17,26)" stroke="rgb(5,8,13)" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M412 262 C 404 300 388 350 362 400 L 332 336 C 350 304 362 272 366 240 Z" fill="rgb(11,17,26)" stroke="rgb(5,8,13)" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M188 84 L146 52 L152 104 Z" fill="rgb(16,24,36)" stroke="rgb(5,8,13)" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M324 84 L366 52 L360 104 Z" fill="rgb(16,24,36)" stroke="rgb(5,8,13)" stroke-width="3" stroke-linejoin="round"/>
+    <!-- cyan rim light on the right edge -->
+    <path d="M374 110 C 394 150 400 200 398 250 C 396 300 384 346 368 380" fill="none" stroke="rgb(17,217,242)" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+    <path d="M360 100 L366 52" fill="none" stroke="rgb(17,217,242)" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  <!-- forehead plate -->
+  <path d="M256 74 L210 98 L256 132 L302 98 Z" fill="rgb(255,236,176)" opacity="0.6"/>
+
+  <!-- belly (chest plates, fills the lower bust) -->
+  <path d="M256 268 C 322 268 346 320 342 372 C 338 422 300 450 256 450 C 212 450 174 422 170 372 C 166 320 190 268 256 268 Z"
+        fill="url(#belly)" stroke="rgb(5,8,13)" stroke-width="5"/>
+  <g stroke="rgb(184,122,0)" stroke-width="3" fill="none" opacity="0.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M200 306 L256 328 L312 306"/><path d="M194 336 L256 360 L318 336"/>
+  </g>
+
+  <!-- amber seams between the plates -->
+  <g id="seam" stroke="rgb(255,138,0)" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M210 98 L256 132 L302 98"/>
+    <path d="M150 248 C 154 276 164 304 180 332"/>
+    <path d="M362 248 C 358 276 348 304 332 332"/>
+  </g>
+
+  <!-- facial mask -->
+  <path d="M256 132 C 230 112 174 112 146 142 C 126 168 128 222 154 246 C 184 266 230 258 256 234 C 282 258 328 266 358 246 C 384 222 386 168 366 142 C 338 112 282 112 256 132 Z"
+        fill="url(#disc)" stroke="rgb(5,8,13)" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- left eye -->
+  <circle cx="200" cy="188" r="58" fill="url(#ring)" stroke="rgb(5,8,13)" stroke-width="5"/>
+  <circle cx="200" cy="188" r="49" fill="url(#eyeW)" stroke="rgb(5,8,13)" stroke-width="3"/>
+  <circle cx="205" cy="192" r="33" fill="url(#iris)" stroke="rgb(5,8,13)" stroke-width="3"/>
+  <circle cx="205" cy="192" r="18" fill="url(#pupil)"/>
+  <circle cx="192" cy="178" r="11" fill="rgb(255,255,255)" opacity="0.95"/>
+  <circle cx="216" cy="205" r="5" fill="rgb(255,236,176)" opacity="0.9"/>
+  <g clip-path="url(#clipEyeL)">
+    <circle id="lidL" cx="200" cy="60" r="63" fill="rgb(255,196,0)" stroke="rgb(138,83,0)" stroke-width="6"/>
+  </g>
+
+  <!-- right eye and scanning lens -->
+  <path d="M366 178 L410 168" fill="none" stroke="rgb(5,8,13)" stroke-width="22" stroke-linecap="round"/>
+  <path d="M366 178 L410 168" fill="none" stroke="url(#metal)" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="312" cy="188" r="58" fill="rgb(16,24,36)" stroke="rgb(5,8,13)" stroke-width="5"/>
+  <circle cx="310" cy="190" r="30" fill="url(#iris)"/>
+  <circle cx="310" cy="190" r="15" fill="url(#pupil)"/>
+  <circle cx="301" cy="180" r="8" fill="rgb(255,255,255)" opacity="0.85"/>
+  <ellipse cx="312" cy="186" rx="62" ry="58" fill="none" stroke="url(#ring)" stroke-width="9"/>
+  <ellipse cx="312" cy="186" rx="62" ry="58" fill="none" stroke="rgb(5,8,13)" stroke-width="2.5"/>
+  <ellipse cx="312" cy="186" rx="57" ry="53" fill="url(#glass)"/>
+  <g clip-path="url(#lens)">
+    <g id="reticle" stroke="rgb(17,217,242)" fill="none" opacity="0.7">
+      <circle cx="312" cy="186" r="44" stroke-width="1.5"/>
+      <g stroke-width="2.2" stroke-linecap="round">
+        <path d="M312 142 v9"/><path d="M312 221 v9"/>
+        <path d="M268 186 h9"/><path d="M347 186 h9"/>
+      </g>
+    </g>
+    <line x1="258" y1="186" x2="366" y2="186" stroke="rgb(17,217,242)" stroke-width="1.2" opacity="0.3"/>
+    <line x1="312" y1="134" x2="312" y2="238" stroke="rgb(17,217,242)" stroke-width="1.2" opacity="0.3"/>
+    <g id="brackets" stroke="rgb(255,224,138)" stroke-width="2.8" fill="none" stroke-linecap="round">
+      <path d="M292 168 h-8 v8"/><path d="M332 168 h8 v8"/>
+      <path d="M292 204 h-8 v-8"/><path d="M332 204 h8 v-8"/>
+    </g>
+    <rect id="vscan" x="256" y="184" width="112" height="3" rx="1.5" fill="rgb(17,217,242)" filter="url(#glow)"/>
+    <path d="M270 148 Q 300 138 336 150 Q 306 168 288 186 Q 274 166 270 148 Z" fill="url(#refl)"/>
+  </g>
+  <circle id="led" cx="312" cy="128" r="4.5" fill="rgb(17,217,242)" filter="url(#glow)"/>
+
+  <!-- brow plates and beak -->
+  <path d="M136 122 L198 108 L254 140 L247 153 L196 126 L140 138 Z" fill="rgb(255,196,0)" stroke="rgb(5,8,13)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M376 122 L314 108 L258 140 L265 153 L316 126 L372 138 Z" fill="rgb(232,166,0)" stroke="rgb(5,8,13)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M234 212 L256 202 L278 212 L264 248 Q 256 262 248 248 Z" fill="url(#beakG)" stroke="rgb(5,8,13)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M244 214 L256 208 L259 228 Z" fill="rgb(142,155,172)" opacity="0.55"/>
+</svg>
