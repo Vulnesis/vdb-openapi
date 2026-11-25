@@ -14,7 +14,7 @@ permissions:
 jobs:
   secrets:
     name: Secrets
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     permissions:
       contents: read
       security-events: write
@@ -41,7 +41,7 @@ jobs:
 
   sast-go:
     name: SAST go
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     permissions:
       contents: read
       security-events: write
@@ -82,7 +82,7 @@ jobs:
 
   sca-go:
     name: SCA go
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     permissions:
       contents: read
       security-events: write
@@ -108,7 +108,7 @@ jobs:
 
   license:
     name: License
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     permissions:
       contents: read
       security-events: write
@@ -125,7 +125,7 @@ jobs:
 
   cbom:
     name: CBOM
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7.0.1
@@ -138,7 +138,7 @@ jobs:
 
   aibom:
     name: AIBOM
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7.0.1
@@ -154,7 +154,7 @@ jobs:
 
   analyze:
     name: Analyze
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     permissions:
       contents: read
       issues: read
@@ -173,7 +173,7 @@ jobs:
 
   sbom:
     name: SBOM
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     permissions:
       attestations: write
       contents: write
@@ -192,7 +192,7 @@ jobs:
 
   publish:
     name: Publish
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     if: ${{ !cancelled() }}
     needs: [secrets, sast-go, sca-go, license, cbom, aibom, analyze, sbom]
     permissions:
@@ -209,7 +209,7 @@ jobs:
 
   tea:
     name: TEA
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     if: ${{ !cancelled() }}
     needs: [cbom, aibom, sbom]
     permissions:
